@@ -1,0 +1,30 @@
+// This file styles specifically your nav
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid @borderColor;
+  background-color: @navAndFooterColor;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: @navFooterFontColor;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: @navHoverOverColor;
+}
+
+li a.active {
+  color: @navHomeFontColor;
+  background-color: @navHomeColor;
+}
